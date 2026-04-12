@@ -16,8 +16,7 @@ namespace POPS_System_Design
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CustomerManagement());
-            Application.Run(new OrderManagement());
+            Application.Run(new MainFormSales());
         }
     }
 }

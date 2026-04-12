@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
-      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,11 +48,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="UserControls\CreateNewCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CreateNewCustomer.Designer.cs">
+      <DependentUpon>CreateNewCustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CustomerManagement.Designer.cs">
       <DependentUpon>CustomerManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormSales.Designer.cs">
+      <DependentUpon>MainFormSales.cs</DependentUpon>
     </Compile>
     <Compile Include="MainPortalPage.cs">
       <SubType>Form</SubType>
@@ -86,8 +98,32 @@
     <Compile Include="RawMaterialManagement.Designer.cs">
       <DependentUpon>RawMaterialManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\CreateOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CreateOrder.Designer.cs">
+      <DependentUpon>CreateOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchCustomer.Designer.cs">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchOrder.Designer.cs">
+      <DependentUpon>SearchOrder.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControls\CreateNewCustomer.resx">
+      <DependentUpon>CreateNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerManagement.resx">
       <DependentUpon>CustomerManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormSales.resx">
+      <DependentUpon>MainFormSales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPortalPage.resx">
       <DependentUpon>MainPortalPage.cs</DependentUpon>
@@ -112,6 +148,15 @@
     </Compile>
     <EmbeddedResource Include="RawMaterialManagement.resx">
       <DependentUpon>RawMaterialManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CreateOrder.resx">
+      <DependentUpon>CreateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SearchCustomer.resx">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SearchOrder.resx">
+      <DependentUpon>SearchOrder.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
