@@ -17,9 +17,13 @@ namespace POPS_System_Design
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             Application.Run(new MainFormSales());
 =======
             Application.Run(new MainPortalPage());
+>>>>>>> Stashed changes
+=======
+            Application.Run(new MainFormSales());
 >>>>>>> Stashed changes
         }
     }
