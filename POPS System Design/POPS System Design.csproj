@@ -98,66 +98,6 @@
     <Compile Include="RawMaterialManagement.Designer.cs">
       <DependentUpon>RawMaterialManagement.cs</DependentUpon>
     </Compile>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-    <Compile Include="UserControls\CreateOrder.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\CreateOrder.Designer.cs">
-      <DependentUpon>CreateOrder.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\SearchCustomer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\SearchCustomer.Designer.cs">
-      <DependentUpon>SearchCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\SearchOrder.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\SearchOrder.Designer.cs">
-      <DependentUpon>SearchOrder.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="UserControls\CreateNewCustomer.resx">
-      <DependentUpon>CreateNewCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-    <Compile Include="SalesPortal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SalesPortal.Designer.cs">
-      <DependentUpon>SalesPortal.cs</DependentUpon>
-    </Compile>
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     <EmbeddedResource Include="CustomerManagement.resx">
       <DependentUpon>CustomerManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,50 +127,6 @@
     </Compile>
     <EmbeddedResource Include="RawMaterialManagement.resx">
       <DependentUpon>RawMaterialManagement.cs</DependentUpon>
-    </EmbeddedResource>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-    <EmbeddedResource Include="UserControls\CreateOrder.resx">
-      <DependentUpon>CreateOrder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\SearchCustomer.resx">
-      <DependentUpon>SearchCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\SearchOrder.resx">
-      <DependentUpon>SearchOrder.cs</DependentUpon>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-    <EmbeddedResource Include="SalesPortal.resx">
-      <DependentUpon>SalesPortal.cs</DependentUpon>
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
