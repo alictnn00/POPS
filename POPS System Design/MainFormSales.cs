@@ -33,9 +33,7 @@ namespace POPS_System_Design
         {
             MainViewPanel.Controls.Clear();
             screen.Dock = DockStyle.Fill;
-            MainViewPanel.Controls.Add(screen); 
-
-            
+            MainViewPanel.Controls.Add(screen);
         }
 
 
