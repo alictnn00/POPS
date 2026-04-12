@@ -100,6 +100,9 @@
     </Compile>
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     <Compile Include="UserControls\CreateOrder.cs">
@@ -124,6 +127,7 @@
       <DependentUpon>CreateNewCustomer.cs</DependentUpon>
     </EmbeddedResource>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
     <Compile Include="SalesPortal.cs">
       <SubType>Form</SubType>
@@ -131,6 +135,8 @@
     <Compile Include="SalesPortal.Designer.cs">
       <DependentUpon>SalesPortal.cs</DependentUpon>
     </Compile>
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -166,6 +172,9 @@
     </EmbeddedResource>
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     <EmbeddedResource Include="UserControls\CreateOrder.resx">
@@ -177,9 +186,12 @@
     <EmbeddedResource Include="UserControls\SearchOrder.resx">
       <DependentUpon>SearchOrder.cs</DependentUpon>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
     <EmbeddedResource Include="SalesPortal.resx">
       <DependentUpon>SalesPortal.cs</DependentUpon>
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
