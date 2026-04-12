@@ -98,6 +98,27 @@
     <Compile Include="RawMaterialManagement.Designer.cs">
       <DependentUpon>RawMaterialManagement.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\CreateOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CreateOrder.Designer.cs">
+      <DependentUpon>CreateOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchCustomer.Designer.cs">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchOrder.Designer.cs">
+      <DependentUpon>SearchOrder.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UserControls\CreateNewCustomer.resx">
+      <DependentUpon>CreateNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerManagement.resx">
       <DependentUpon>CustomerManagement.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +148,15 @@
     </Compile>
     <EmbeddedResource Include="RawMaterialManagement.resx">
       <DependentUpon>RawMaterialManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CreateOrder.resx">
+      <DependentUpon>CreateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SearchCustomer.resx">
+      <DependentUpon>SearchCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\SearchOrder.resx">
+      <DependentUpon>SearchOrder.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
