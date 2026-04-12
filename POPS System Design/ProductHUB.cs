@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace POPS_System_Design
 {
-    public partial class ProductManagement : Form
+    public partial class ProductHUB : Form
     {
-        public ProductManagement()
+        public ProductHUB()
         {
             InitializeComponent();
         }
-
     }
 }
