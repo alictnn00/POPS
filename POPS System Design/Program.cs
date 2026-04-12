@@ -20,9 +20,13 @@ namespace POPS_System_Design
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             Application.Run(new MainFormSales());
 =======
             Application.Run(new MainPortalPage());
+>>>>>>> Stashed changes
+=======
+            Application.Run(new MainFormSales());
 >>>>>>> Stashed changes
 =======
             Application.Run(new MainFormSales());
