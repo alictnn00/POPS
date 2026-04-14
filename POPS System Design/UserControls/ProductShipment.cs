@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace POPS_System_Design
+namespace POPS_System_Design.UserControls
 {
-    public partial class RawMaterialManagement : Form
+    public partial class ProductShipment : UserControl
     {
-        public RawMaterialManagement()
+        public ProductShipment()
         {
             InitializeComponent();
-        }
-
-        private void RawMaterialManagement_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

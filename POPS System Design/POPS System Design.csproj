@@ -48,6 +48,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainFormProduction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormProduction.Designer.cs">
+      <DependentUpon>MainFormProduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFormWarehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormWarehouse.Designer.cs">
+      <DependentUpon>MainFormWarehouse.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\CreateNewCustomer.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -80,17 +92,47 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RawMaterialManagement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RawMaterialManagement.Designer.cs">
-      <DependentUpon>RawMaterialManagement.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\CreateOrder.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\CreateOrder.Designer.cs">
       <DependentUpon>CreateOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MaterialInventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MaterialInventory.Designer.cs">
+      <DependentUpon>MaterialInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MaterialShipmentUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MaterialShipmentUpdate.Designer.cs">
+      <DependentUpon>MaterialShipmentUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductInventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductInventory.Designer.cs">
+      <DependentUpon>ProductInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductionHomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductionHomePage.Designer.cs">
+      <DependentUpon>ProductionHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductionUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductionUpdate.Designer.cs">
+      <DependentUpon>ProductionUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ProductShipment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ProductShipment.Designer.cs">
+      <DependentUpon>ProductShipment.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\SearchCustomer.cs">
       <SubType>UserControl</SubType>
@@ -104,6 +146,18 @@
     <Compile Include="UserControls\SearchOrder.Designer.cs">
       <DependentUpon>SearchOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\WarehouseHomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WarehouseHomePage.Designer.cs">
+      <DependentUpon>WarehouseHomePage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainFormProduction.resx">
+      <DependentUpon>MainFormProduction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFormWarehouse.resx">
+      <DependentUpon>MainFormWarehouse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CreateNewCustomer.resx">
       <DependentUpon>CreateNewCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,17 +182,35 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RawMaterialManagement.resx">
-      <DependentUpon>RawMaterialManagement.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\CreateOrder.resx">
       <DependentUpon>CreateOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MaterialInventory.resx">
+      <DependentUpon>MaterialInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MaterialShipmentUpdate.resx">
+      <DependentUpon>MaterialShipmentUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProductInventory.resx">
+      <DependentUpon>ProductInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProductionHomePage.resx">
+      <DependentUpon>ProductionHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProductionUpdate.resx">
+      <DependentUpon>ProductionUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ProductShipment.resx">
+      <DependentUpon>ProductShipment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SearchCustomer.resx">
       <DependentUpon>SearchCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SearchOrder.resx">
       <DependentUpon>SearchOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WarehouseHomePage.resx">
+      <DependentUpon>WarehouseHomePage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
