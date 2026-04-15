@@ -1,4 +1,5 @@
-﻿using System;
+﻿using POPS_System_Design.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,16 @@ namespace POPS_System_Design
         public SearchCustomer()
         {
             InitializeComponent();
+            LoadCustomers();
+        }
+
+        private void LoadCustomers()
+        {
+            CustomerRepository repo = new CustomerRepository();
+
+            var customers = repo.GetAllCustomers();
+
+            dgvCustomer.DataSource = customers;
         }
     }
 }

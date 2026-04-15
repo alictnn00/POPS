@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.txtSearchBox = new System.Windows.Forms.TextBox();
+            this.dgvCustomer = new System.Windows.Forms.DataGridView();
+            this.cmbSearchFilter = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel3.Controls.Add(this.textBox7);
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Controls.Add(this.comboBox3);
+            this.panel3.Controls.Add(this.txtSearchBox);
+            this.panel3.Controls.Add(this.dgvCustomer);
+            this.panel3.Controls.Add(this.cmbSearchFilter);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -51,35 +51,36 @@
             this.panel3.Size = new System.Drawing.Size(750, 450);
             this.panel3.TabIndex = 3;
             // 
-            // textBox7
+            // txtSearchBox
             // 
-            this.textBox7.AccessibleDescription = "";
-            this.textBox7.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(292, 21);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(150, 23);
-            this.textBox7.TabIndex = 3;
+            this.txtSearchBox.AccessibleDescription = "";
+            this.txtSearchBox.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchBox.Location = new System.Drawing.Point(292, 21);
+            this.txtSearchBox.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSearchBox.Name = "txtSearchBox";
+            this.txtSearchBox.Size = new System.Drawing.Size(150, 23);
+            this.txtSearchBox.TabIndex = 3;
             // 
-            // dataGridView1
+            // dgvCustomer
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 50);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(696, 346);
-            this.dataGridView1.TabIndex = 4;
+            this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCustomer.Location = new System.Drawing.Point(10, 50);
+            this.dgvCustomer.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvCustomer.Name = "dgvCustomer";
+            this.dgvCustomer.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvCustomer.Size = new System.Drawing.Size(736, 346);
+            this.dgvCustomer.TabIndex = 4;
             // 
-            // comboBox3
+            // cmbSearchFilter
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(144, 20);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(140, 24);
-            this.comboBox3.TabIndex = 2;
+            this.cmbSearchFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSearchFilter.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSearchFilter.FormattingEnabled = true;
+            this.cmbSearchFilter.Location = new System.Drawing.Point(144, 20);
+            this.cmbSearchFilter.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbSearchFilter.Name = "cmbSearchFilter";
+            this.cmbSearchFilter.Size = new System.Drawing.Size(140, 24);
+            this.cmbSearchFilter.TabIndex = 2;
             // 
             // label13
             // 
@@ -101,7 +102,7 @@
             this.Size = new System.Drawing.Size(750, 450);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -109,9 +110,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox txtSearchBox;
+        private System.Windows.Forms.DataGridView dgvCustomer;
+        private System.Windows.Forms.ComboBox cmbSearchFilter;
         private System.Windows.Forms.Label label13;
     }
 }
