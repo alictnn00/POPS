@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.txtProductSearch = new System.Windows.Forms.TextBox();
+            this.dgvProducts = new System.Windows.Forms.DataGridView();
+            this.cmbProductSearchType = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel3.Controls.Add(this.textBox7);
-            this.panel3.Controls.Add(this.dataGridView1);
-            this.panel3.Controls.Add(this.comboBox3);
+            this.panel3.Controls.Add(this.txtProductSearch);
+            this.panel3.Controls.Add(this.dgvProducts);
+            this.panel3.Controls.Add(this.cmbProductSearchType);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -51,35 +51,37 @@
             this.panel3.Size = new System.Drawing.Size(784, 411);
             this.panel3.TabIndex = 4;
             // 
-            // textBox7
+            // txtProductSearch
             // 
-            this.textBox7.AccessibleDescription = "";
-            this.textBox7.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(270, 22);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(150, 23);
-            this.textBox7.TabIndex = 7;
+            this.txtProductSearch.AccessibleDescription = "";
+            this.txtProductSearch.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductSearch.Location = new System.Drawing.Point(270, 22);
+            this.txtProductSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.txtProductSearch.Name = "txtProductSearch";
+            this.txtProductSearch.Size = new System.Drawing.Size(150, 23);
+            this.txtProductSearch.TabIndex = 7;
+            this.txtProductSearch.TextChanged += new System.EventHandler(this.txtProductSearch_TextChanged);
             // 
-            // dataGridView1
+            // dgvProducts
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(10, 50);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(705, 346);
-            this.dataGridView1.TabIndex = 8;
+            this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducts.Location = new System.Drawing.Point(10, 50);
+            this.dgvProducts.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvProducts.Name = "dgvProducts";
+            this.dgvProducts.Size = new System.Drawing.Size(705, 346);
+            this.dgvProducts.TabIndex = 8;
             // 
-            // comboBox3
+            // cmbProductSearchType
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(122, 21);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(140, 24);
-            this.comboBox3.TabIndex = 6;
+            this.cmbProductSearchType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProductSearchType.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbProductSearchType.FormattingEnabled = true;
+            this.cmbProductSearchType.Location = new System.Drawing.Point(122, 21);
+            this.cmbProductSearchType.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbProductSearchType.Name = "cmbProductSearchType";
+            this.cmbProductSearchType.Size = new System.Drawing.Size(140, 24);
+            this.cmbProductSearchType.TabIndex = 6;
+            this.cmbProductSearchType.SelectedIndexChanged += new System.EventHandler(this.cmbProductSearchType_SelectedIndexChanged);
             // 
             // label13
             // 
@@ -99,9 +101,10 @@
             this.Controls.Add(this.panel3);
             this.Name = "ProductInventory";
             this.Size = new System.Drawing.Size(784, 411);
+            this.Load += new System.EventHandler(this.ProductInventory_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -109,9 +112,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox txtProductSearch;
+        private System.Windows.Forms.DataGridView dgvProducts;
+        private System.Windows.Forms.ComboBox cmbProductSearchType;
         private System.Windows.Forms.Label label13;
     }
 }

@@ -27,5 +27,24 @@ namespace POPS_System_Design
 
             dgvCustomer.DataSource = customers;
         }
+
+        private void SearchCustomer_Load(object sender, EventArgs e)
+        {
+            cmbSearchType.Items.Add("ID");
+            cmbSearchType.Items.Add("Name");
+            cmbSearchType.SelectedIndex = 0;
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = txtSearch.Text.Trim();
+            string searchType = cmbSearchType.Text;
+
+            CustomerRepository repo = new CustomerRepository();
+
+            var results = repo.SearchCustomers(searchText, searchType);
+
+            dgvCustomer.DataSource = results;
+        }
     }
 }

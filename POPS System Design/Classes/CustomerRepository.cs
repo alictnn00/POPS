@@ -84,5 +84,71 @@ namespace POPS_System_Design.Classes
             }
             return customers;
         }
+
+        //Search for customers by ID or Name
+        public List<Customer> SearchCustomers(string searchText, string searchType)
+        {
+            List<Customer> customers = new List<Customer>();
+
+            using (MySqlConnection conn = db.GetConnection())
+            {
+                conn.Open();
+
+                string query;
+                if (string.IsNullOrEmpty(searchText))
+                {
+                    query = "SELECT * FROM DbCustomer";
+                } //ID Search
+                else if (searchType == "ID")
+                {
+                    query = @"SELECT * FROM DbCustomer WHERE custID = @Search";
+                }
+                else // Name search
+                {
+                    query = @"SELECT * FROM DbCustomer 
+                      WHERE firstName LIKE @Search 
+                      OR lastName LIKE @Search";
+                }
+
+                using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                {
+                    if (searchType == "ID")
+                    {
+                        cmd.Parameters.AddWithValue("@Search", searchText);
+                    }
+                    else
+                    {
+                        cmd.Parameters.AddWithValue("@Search", "%" + searchText + "%");
+                    }
+
+                    using (MySqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            customers.Add(new Customer
+                            {
+                                CustomerID = reader.GetInt32("custID"),
+                                FirstName = reader.GetString("firstName"),
+                                LastName = reader.GetString("lastName"),
+                                Email = reader.GetString("email"),
+                                Phone = reader.GetString("phone"),
+                                Address = new Address()
+                                {
+                                    Street = reader.GetString("street"),
+                                    City = reader.GetString("city"),
+                                    State = reader.GetString("state"),
+                                    Zip = reader.GetString("zip")
+                                }
+                            });
+                        }
+                    }
+                }
+
+                return customers;
+            }
+
+
+
+        }
     }
 }

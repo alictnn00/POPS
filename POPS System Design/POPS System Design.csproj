@@ -101,6 +101,14 @@
     <Compile Include="Classes\Customer.cs" />
     <Compile Include="Classes\CustomerRepository.cs" />
     <Compile Include="Classes\DatabaseConnection.cs" />
+    <Compile Include="Classes\Employee.cs" />
+    <Compile Include="Classes\EmployeeAuthentication.cs" />
+    <Compile Include="Classes\EmployeeRepository.cs" />
+    <Compile Include="Classes\OrderDetailView.cs" />
+    <Compile Include="Classes\OrderRepository.cs" />
+    <Compile Include="Classes\OrderView.cs" />
+    <Compile Include="Classes\Product.cs" />
+    <Compile Include="Classes\ProductRepository.cs" />
     <Compile Include="Classes\StateData.cs" />
     <Compile Include="MainFormProduction.cs">
       <SubType>Form</SubType>
